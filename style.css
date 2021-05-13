@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+  --fundo-ativado: #03a9f4;
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 300px;
+  height: 100px;
+}
+
+.content {
+  padding: 100px 0;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+}
+
+.filter .item {
+  background-color: #ccc;
+  padding: 15px 25px;
+  margin: 10px 10px 0;
+
+  cursor: pointer;
+}
+
+.itens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.itens .itemBox {
+ 
+  width: 300px;
+  height: 300px;
+  margin: 4px;
+}
+
+.itens .itemBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.filter .item.active {
+  background-color: var(--fundo-ativado);
+  color: #fff;
+}
+
+.itens .itemBox.hide {
+  display: none;
+}
